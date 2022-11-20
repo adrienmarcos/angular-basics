@@ -1,5 +1,6 @@
 import {
-  Component, Input, EventEmitter, Output, OnInit, OnChanges, DoCheck
+  Component, Input, EventEmitter, Output, OnInit, OnChanges, DoCheck,
+  AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy
 } from '@angular/core';
 
 @Component({
@@ -7,7 +8,9 @@ import {
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.css']
 })
-export class PostComponent implements OnInit, OnChanges, DoCheck {
+export class PostComponent implements OnInit, OnChanges, DoCheck,
+  AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
+
   @Input('img')
   postImg = '';
 
@@ -28,5 +31,25 @@ export class PostComponent implements OnInit, OnChanges, DoCheck {
 
   ngOnChanges(): void {
     console.log('ngOnChanges() called');
+  }
+
+  ngAfterContentInit() {
+    console.log('ngAfterContentInit() called');
+  }
+
+  ngAfterContentChecked(): void {
+    console.log('(ngAfterContentChecked) called');
+  }
+
+  ngAfterViewChecked(): void {
+    console.log('ngAfterViewChecked() called');
+  }
+
+  ngAfterViewInit(): void {
+    console.log('ngAfterViewInit() called');
+  }
+
+  ngOnDestroy(): void {
+    console.log('ngOnDestroy() called');
   }
 }
