@@ -1,11 +1,13 @@
-import { Component, Input, EventEmitter, Output, OnInit } from '@angular/core';
+import {
+  Component, Input, EventEmitter, Output, OnInit, OnChanges, DoCheck
+} from '@angular/core';
 
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.css']
 })
-export class PostComponent implements OnInit {
+export class PostComponent implements OnInit, OnChanges, DoCheck {
   @Input('img')
   postImg = '';
 
@@ -18,5 +20,13 @@ export class PostComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('ngOnInit() called', this.postImg);
+  }
+
+  ngDoCheck(): void {
+    console.log('ngDoCheck() called');
+  }
+
+  ngOnChanges(): void {
+    console.log('ngOnChanges() called');
   }
 }
