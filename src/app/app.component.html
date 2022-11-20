@@ -1,1 +1,3 @@
-<p>Hello World!</p>
+<input (keyup)="changeImage($event)" [value]="imgURL"> <br/>
+
+<app-post [img]="imgURL" (imgSelected)="logImg($event)"></app-post>
