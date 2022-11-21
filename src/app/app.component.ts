@@ -13,6 +13,14 @@ export class AppComponent {
   temperature = 25.3;
   currentDate = new Date();
   imgURL = 'https://picsum.photos/id/237/500/500';
+  images = [
+    'https://picsum.photos/id/236/500/500',
+    'https://picsum.photos/id/231/500/500',
+    'https://picsum.photos/id/22/500/500',
+    'https://picsum.photos/id/247/500/500',
+    'https://picsum.photos/id/247/500/500',
+    'https://picsum.photos/id/1/500/500'
+  ];
   pizza = {
     toppings: ['pepperoni', 'bacon'],
     size: 'large'
