@@ -38,7 +38,7 @@ export class PostComponent implements OnInit, OnChanges, DoCheck,
   }
 
   ngAfterContentChecked(): void {
-    console.log('(ngAfterContentChecked) called');
+    console.log('ngAfterContentChecked() called');
   }
 
   ngAfterViewChecked(): void {

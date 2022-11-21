@@ -6,6 +6,7 @@ import { Component } from "@angular/core";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  name = 'adrien';
   imgURL = 'https://picsum.photos/id/237/500/500';
 
   changeImage(e: KeyboardEvent) {
