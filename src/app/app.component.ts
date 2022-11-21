@@ -8,6 +8,7 @@ import { Component } from "@angular/core";
 export class AppComponent {
   cost = 2000;
   name = 'adrien';
+  fontSize = 16;
   blueClass = false;
   temperature = 25.3;
   currentDate = new Date();

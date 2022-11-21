@@ -1,13 +1,14 @@
 input {
   display: block;
-  margin: 10px 0px;
+  margin: 10px 0;
 }
 
 hr {
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
 .blue {
   background-color: blue;
   color: white;
 }
+
