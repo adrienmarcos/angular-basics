@@ -5,3 +5,6 @@
 </app-post>
 
 <p>Hello {{ name | titlecase }}</p>
+<p>{{ currentDate | date: 'd MMMM YYYY' }}</p>
+<p>{{ cost | currency: 'BRL' }}</p>
+<p>{{ temperature | number: '1.2-5' }}</p>
